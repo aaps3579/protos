@@ -1,4 +1,4 @@
-module protos
+module github.com/aaps3579/protos
 
 go 1.19
 
