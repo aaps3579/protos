@@ -1,0 +1,15 @@
+syntax = "proto3";
+package cart;
+import "user/user.proto";
+option go_package = "/protos/cart";
+
+message Product {
+    string pid = 1;
+    string pname = 2;
+    uint64 price = 3;
+}
+
+message Cart {
+    repeated Product products = 1;
+    user.User user = 2;
+}

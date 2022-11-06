@@ -1,0 +1,10 @@
+syntax = "proto3";
+package user;
+option go_package = "protos/user";
+message User {
+    string email = 1;
+}
+
+service Authentication {
+    rpc Login (User) returns (User) {};
+}
